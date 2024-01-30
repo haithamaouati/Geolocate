@@ -2,6 +2,8 @@
 
 **Geolocate** an IP address using the ip-api.com JSON API. The script displays various details such as city, region, country, ISP, and more. Additionally, it saves the fetched information to a JSON file.
 
+![screenshot](https://raw.githubusercontent.com/haithamaouati/Geolocate/main/screenshot.jpg)
+
 ## Usage
 
 To use the Geolocate script, follow these steps:
