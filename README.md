@@ -30,10 +30,10 @@ To use the Geolocate script, follow these steps:
 
 The script requires the following dependencies:
 
-- [figlet]():
-- [curl]():
-- [jq](https://stedolan.github.io/jq/): A lightweight and flexible command-line JSON processor.
-- [pv]():
+- [figlet](http://www.figlet.org/): Program for making large letters out of ordinary text
+- [curl](https://curl.se/): Command line tool for transferring data with URL syntax
+- [jq](https://stedolan.github.io/jq/): Command-line JSON processor
+- [pv](http://www.ivarch.com/programs/pv.shtml): Terminal-based tool for monitoring the progress of data through a pipeline
 
 Make sure to install these dependencies before running the script.
 
