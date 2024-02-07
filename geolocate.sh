@@ -12,11 +12,14 @@ source ~/Geolocate/config/text.sh
 echo -e "\n\n${RED}$(figlet -f config/pagga.flf Geolocate)\n"
 sleep 1
 echo -e "${RED_BOLD}Geolocate ${CLEAR}by Haitham Aouati"
-echo -e " an IP address using the ip-api.com JSON API.\n" | pv -qL 10
+echo -e " an IP address using JSON API.\n" | pv -qL 10
 echo -e "GitHub: ${UNDERLINE}github.com/haithamaouati${CLEAR}\n"
 
+# Fetch public IP address using ifconfig.me
+public_ip=$(curl -s ifconfig.me)
+
 if [ $# -ne 1 ]; then
-  echo -e "Usage: $0 <IP address>\n"
+  echo -e "Usage: $0 <IP address> [$public_ip]\n"
   exit 1
 fi
 
